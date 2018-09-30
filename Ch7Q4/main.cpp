@@ -21,15 +21,16 @@ public:
     int getYear();
     int getSpeed();
     string getMake();
-
+    
+    void brake();
 };
-
+// constructor---------------
 Car::Car(int x, string y){
     this->make = y;
     this->year = x;
     this->speed= 0;
 }
-
+//accessor methods----------
 int Car::getYear(){
     return this->year;
 }
@@ -40,6 +41,10 @@ string Car::getMake(){
 
 int Car::getSpeed(){
     return this->speed;
+}
+
+void Car::brake(){
+    this->speed -= 5;
 }
 
 int main() {
