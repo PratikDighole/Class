@@ -46,6 +46,7 @@ int Car::getSpeed(){
 void Car::addSpeed(){
      this->speed += 5;
 }
+
 void Car::brake(){
     this->speed -= 5;
 }
@@ -56,9 +57,13 @@ int main() {
     cout << ford.getYear() << endl;
     cout << ford.getMake() << endl;
     cout << ford.getSpeed() << endl;
- 
-    for (int i = 0 ; i < 5 ; i++){
-    ford.addSpeed();
-    cout << "speed: "<< ford.getSpeed() << endl;
+    for(int i = 0; i < 5; i++){
+        ford.addSpeed();
+        cout << "Speed: " << ford.getSpeed() << endl;
+        cout << endl;
+    }
+    for (int j = 0 ; j<5 ; j++){
+        ford.brake();
+        cout << "Brake: " << ford.getSpeed() << endl;
     }
 }
