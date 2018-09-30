@@ -17,6 +17,9 @@ private:
 
 public:
     Car(int, string);
+    
+    //Accessor methods
+    int getYear();
 };
 
 Car::Car(int x, string y){
@@ -25,7 +28,12 @@ Car::Car(int x, string y){
     this->speed= 0;
 }
 
+int Car::getYear(){
+    return this->year;
+}
+
 int main() {
     
     Car ford(2018, "F150");
+    cout << ford.getYear() << endl;
 }
