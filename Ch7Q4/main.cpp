@@ -16,11 +16,12 @@ private:
     int speed;
 
 public:
-    Car();
+    Car(int, string);
 };
 
-Car::Car(){
-    
+Car::Car(int x, string y){
+    this->make = y;
+    this->year = x;
 }
 
 int main() {
