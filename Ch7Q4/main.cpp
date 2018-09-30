@@ -17,11 +17,11 @@ private:
 
 public:
     Car(int, string);
-    //Accessor methods
+//Accessor Prototypes----------
     int getYear();
     int getSpeed();
     string getMake();
-    
+    void addSpeed();    
     void brake();
 };
 // constructor---------------
@@ -43,6 +43,10 @@ int Car::getSpeed(){
     return this->speed;
 }
 
+void Car::addSpeed(){
+     this->speed += 5;
+}
+
 void Car::brake(){
     this->speed -= 5;
 }
@@ -53,4 +57,9 @@ int main() {
     cout << ford.getYear() << endl;
     cout << ford.getMake() << endl;
     cout << ford.getSpeed() << endl;
+    
+    for(int i = 0; i < 5; i++){
+        ford.addSpeed();
+        cout << "Speed: " << ford.getSpeed() << endl;
+    }
 }
