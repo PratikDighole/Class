@@ -23,13 +23,13 @@ public:
     string getMake();
 
 };
-
+// constructor---------------
 Car::Car(int x, string y){
     this->make = y;
     this->year = x;
     this->speed= 0;
 }
-
+//accessor methods----------
 int Car::getYear(){
     return this->year;
 }
@@ -47,4 +47,6 @@ int main() {
     Car ford(2018, "F150");
     cout << ford.getYear() << endl;
     cout << ford.getMake() << endl;
+    cout << ford.getSpeed() << endl;
+    
 }
