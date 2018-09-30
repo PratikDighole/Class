@@ -8,12 +8,21 @@
 
 #include <iostream>
 using namespace std;
+
 class Car{
 private:
     int year;
     string make;
     int speed;
+
+public:
+    Car();
 };
+
+Car::Car(){
+    
+}
+
 int main() {
 
 }
