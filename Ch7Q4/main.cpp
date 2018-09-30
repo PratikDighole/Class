@@ -21,7 +21,7 @@ public:
     int getYear();
     int getSpeed();
     string getMake();
-    void addSpeed();    
+    void addSpeed();
     void brake();
 };
 // constructor---------------
@@ -56,4 +56,9 @@ int main() {
     cout << ford.getYear() << endl;
     cout << ford.getMake() << endl;
     cout << ford.getSpeed() << endl;
+ 
+    for (int i = 0 ; i < 5 ; i++){
+    ford.addSpeed();
+    cout << "speed: "<< ford.getSpeed() << endl;
+    }
 }
