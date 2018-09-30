@@ -17,10 +17,11 @@ private:
 
 public:
     Car(int, string);
-    //Accessor methods
+//Accessor Prototypes----------
     int getYear();
     int getSpeed();
     string getMake();
+    void addSpeed();
 
 };
 // constructor---------------
@@ -40,6 +41,10 @@ string Car::getMake(){
 
 int Car::getSpeed(){
     return this->speed;
+}
+
+void Car::addSpeed(){
+     this->speed += 5;
 }
 
 int main() {
