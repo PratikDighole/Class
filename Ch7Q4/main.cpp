@@ -19,7 +19,9 @@ public:
     Car(int, string);
     //Accessor methods
     int getYear();
+    int getSpeed();
     string getMake();
+
 };
 
 Car::Car(int x, string y){
@@ -30,9 +32,14 @@ Car::Car(int x, string y){
 
 int Car::getYear(){
     return this->year;
-    }
+}
+
 string Car::getMake(){
     return this->make;
+}
+
+int Car::getSpeed(){
+    return this->speed;
 }
 
 int main() {
