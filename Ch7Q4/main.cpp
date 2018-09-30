@@ -47,4 +47,5 @@ int main() {
     Car ford(2018, "F150");
     cout << ford.getYear() << endl;
     cout << ford.getMake() << endl;
+    cout << ford.getSpeed() << endl;
 }
