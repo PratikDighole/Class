@@ -17,9 +17,9 @@ private:
 
 public:
     Car(int, string);
-    
     //Accessor methods
     int getYear();
+    string getMake();
 };
 
 Car::Car(int x, string y){
@@ -30,10 +30,14 @@ Car::Car(int x, string y){
 
 int Car::getYear(){
     return this->year;
+    }
+string Car::getMake(){
+    return this->make;
 }
 
 int main() {
     
     Car ford(2018, "F150");
     cout << ford.getYear() << endl;
+    cout << ford.getMake() << endl;
 }
