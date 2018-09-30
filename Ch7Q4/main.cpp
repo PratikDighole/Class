@@ -21,8 +21,8 @@ public:
     int getYear();
     int getSpeed();
     string getMake();
-    void addSpeed();
-
+    void addSpeed();    
+    void brake();
 };
 // constructor---------------
 Car::Car(int x, string y){
@@ -46,6 +46,9 @@ int Car::getSpeed(){
 void Car::addSpeed(){
      this->speed += 5;
 }
+void Car::brake(){
+    this->speed -= 5;
+}
 
 int main() {
     
@@ -53,5 +56,4 @@ int main() {
     cout << ford.getYear() << endl;
     cout << ford.getMake() << endl;
     cout << ford.getSpeed() << endl;
-    
 }
