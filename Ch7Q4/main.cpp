@@ -22,8 +22,7 @@ public:
 Car::Car(int x, string y){
     this->make = y;
     this->year = x;
-
-    this->speed=0;
+    this->speed= 0;
 }
 
 int main() {
