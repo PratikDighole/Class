@@ -13,13 +13,13 @@ class Car{
 private:
     int year;
     string make;
-    int speed;
+    float speed;
 
 public:
     Car(int, string);
 //Accessor Prototypes----------
     int getYear();
-    int getSpeed();
+    float getSpeed();
     string getMake();
     void addSpeed();
     void brake();
@@ -39,7 +39,7 @@ string Car::getMake(){
     return this->make;
 }
 
-int Car::getSpeed(){
+float Car::getSpeed(){
     return this->speed;
 }
 
